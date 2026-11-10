@@ -2,9 +2,7 @@
 
 Paint with flowers using just your fingers. FloralCanvas is a full-screen, two-handed augmented-reality filter that runs in your browser: pinch your thumb with any finger, move your hand, and flowers bloom on stems over your live camera while butterflies drift across the screen.
 
-**Live demo:** https://your-app.vercel.app  <!-- replace after deploying -->
-
-> Everything runs locally in your browser. Your camera video is never uploaded or stored anywhere.
+**Live demo:** https://floralcanvas.vercel.app  
 
 ## Features
 
