@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover"
+    />
+    <meta name="theme-color" content="#2a1f3d" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <title>FloralCanvas</title>
+  </head>
+  <body>
+    <!-- Live camera (mirrored with CSS) -->
+    <video id="cam" playsinline muted autoplay></video>
+
+    <!-- Transparent layer where flowers and butterflies are drawn -->
+    <canvas id="fx"></canvas>
+
+    <!-- Soft pastel glow so the controls stay readable -->
+    <div class="glow"></div>
+
+    <!-- Small status / hint pills -->
+    <div id="status" class="pill status">Waking up the flowers…</div>
+    <div id="hint" class="pill hint hidden">Pinch thumb + finger to bloom</div>
+
+    <!-- Minimal controls -->
+    <div class="controls">
+      <button id="undo" class="ctrl" data-tip="Undo" aria-label="Undo" disabled>
+        <svg viewBox="0 0 24 24"><path d="M9 14 4 9l5-5" /><path d="M4 9h10a6 6 0 0 1 0 12h-3" /></svg>
+      </button>
+      <button id="redo" class="ctrl" data-tip="Redo" aria-label="Redo" disabled>
+        <svg viewBox="0 0 24 24"><path d="m15 14 5-5-5-5" /><path d="M20 9H10a6 6 0 0 0 0 12h3" /></svg>
+      </button>
+      <button id="clear" class="ctrl" data-tip="Clear" aria-label="Clear">
+        <svg viewBox="0 0 24 24"><path d="M3 6h18" /><path d="M8 6V4h8v2" /><path d="M6 6l1 14h10l1-14" /></svg>
+      </button>
+      <button id="save" class="ctrl" data-tip="Save photo" aria-label="Save photo">
+        <svg viewBox="0 0 24 24"><path d="M12 3v12" /><path d="m7 11 5 5 5-5" /><path d="M5 21h14" /></svg>
+      </button>
+    </div>
+
+    <div id="flash"></div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
